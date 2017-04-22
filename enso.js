@@ -1,20 +1,20 @@
 
-console.log("hola");
+console.log("Proyecto de Java 3");
 
 
 
 
 
 
-d3.json("https://www.ncdc.noaa.gov/teleconnections/enso/indicators/soi/data.json",function(gato) {
-    console.log(gato);
-    var perro=[];
+d3.json("https://www.ncdc.noaa.gov/teleconnections/enso/indicators/soi/data.json",function(datos) {
+    console.log(datos);
+    var valor=[];
     for(i=0;i<20;i++){
-        perro.push(i);
+        valor.push(i);
     }
     d3.select("svg")
 .selectAll("rect")
-.data(perro)
+.data(valor)
 .enter()
 .append("rect")
 .attr("width", 40)
